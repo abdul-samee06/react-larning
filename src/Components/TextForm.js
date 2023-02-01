@@ -27,6 +27,7 @@ const TextForm = props => {
         const str = document.getElementById("exampleFormControlTextarea1");
         str.select();
         navigator.clipboard.writeText(str.value);
+        props.showAlert("Copied to clipboard","success");
     }
 
     const removeExtraSpacesHandler=()=>{
